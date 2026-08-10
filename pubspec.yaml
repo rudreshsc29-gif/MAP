@@ -1,0 +1,53 @@
+name: news_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Core
+  provider: ^6.1.2
+  intl: ^0.19.0
+  cupertino_icons: ^1.0.6
+
+  # Firebase
+  firebase_core: ^3.2.0
+  firebase_auth: ^5.1.2
+  google_sign_in: ^6.2.1
+  cloud_firestore: ^5.1.0
+  firebase_storage: ^12.1.0
+
+  # Media & Uploads
+  image_picker: ^1.1.2
+  # UPDATED: To version 0.23.1 to fix the HTTP conflict
+  cloudinary_public: ^0.23.1 
+
+  # AI
+  google_generative_ai: ^0.4.0
+
+  # Features
+  share_plus: ^9.0.0
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+# Icon Configuration
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: false
+  image_path: "assets/images/app_logo.png"
+  min_sdk_android: 21
